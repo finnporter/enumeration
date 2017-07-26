@@ -1,12 +1,21 @@
 var arrayTasks = {
 
-	// concat: function (arr1, arr2) {
+	concat: function (arr1, arr2) {
+		var newArray = [];
+		for (element of arr1) {
+			newArray.push(element);
+		}
+		for (element of arr2) {
+			newArray.push(element);
+		}
+		return newArray;
 
-	// },
+	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-		
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		arr.splice(index, 0, itemToAdd)
+		return arr;
+	},
 
 	// square: function (arr) {
 		

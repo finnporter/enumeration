@@ -18,10 +18,10 @@ var arrayTasks = {
 	},
 
 	square: function (arr) {
-    var newArray = arr.map(function (element) {
-       return element * element;
-    })
-    return newArray;
+		var newArray = arr.map(function (element) {
+			return element * element;
+		})
+		return newArray;
 		// var newArray = [];
 		// for (element of arr) {
 		// 	var newElement = element * element;
@@ -52,18 +52,23 @@ var arrayTasks = {
     	}
     }
     return resultArray;
-	},
+  },
 
-	removeAndClone: function (arr, valueToRemove) {
-		var newArray = arr.filter(function(element) {
-			return element != valueToRemove 
-		})
-		return newArray;
-		},
+  removeAndClone: function (arr, valueToRemove) {
+  	var newArray = arr.filter(function(element) {
+  		return element != valueToRemove 
+  	})
+  	return newArray;
+  },
 
-	findIndexesOf: function (arr, itemToFind) {
-		
-	},
+  findIndexesOf: function (arr, itemToFind) {
+  	var newArray = [];
+  	for (i = 0; i < arr.length; i++)
+  		if (arr[i] === itemToFind) {
+  			newArray.push(i);
+  		}
+  		return newArray;
+  	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 		

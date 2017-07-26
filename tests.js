@@ -37,7 +37,7 @@ describe('Array tasks', function () {
 
 	it('should find all occurences of a value, returning an array of index positions', function () {
 		var arr = [1, 2, 1, 3, 4, 1, 5]
-		assert.deepEqual([0, 2, 5], arrayTasks.findIndexesOf(arr, 1))
+		assert.deepEqual(arrayTasks.findIndexesOf(arr, 1), [0, 2, 5])
 	})
 
 	// it('should calculate the sum of all of even numbers in an array squared', function () {

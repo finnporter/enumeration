@@ -18,12 +18,16 @@ var arrayTasks = {
 	},
 
 	square: function (arr) {
-		var newArray = [];
-		for (element of arr) {
-			var newElement = element * element;
-			newArray.push(newElement);
-		}
-		return newArray;
+    var newArray = arr.map(function (element) {
+       return element * element;
+    })
+    return newArray;
+		// var newArray = [];
+		// for (element of arr) {
+		// 	var newElement = element * element;
+		// 	newArray.push(newElement);
+		// }
+		// return newArray;
 	},
 
 	// sum: function (arr) {

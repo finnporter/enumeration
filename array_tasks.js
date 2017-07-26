@@ -38,17 +38,32 @@ var arrayTasks = {
 		return totalSum;
 	},
 
-	// findDuplicates: function (arr) {
-		
-	// },
+	findDuplicates: function (arr) {
+    //use forEach instead of for
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+    var newArray = [];
+    var resultArray = [];
+    for (element of arr) {
+    	if (newArray.includes(element) && !resultArray.includes(element)) {
+    		resultArray.push(element);
+    	} 
+    	else {
+    		newArray.push(element);
+    	}
+    }
+    return resultArray;
+	},
 
-	// findIndexesOf: function (arr, itemToFind) {
+	removeAndClone: function (arr, valueToRemove) {
+		var newArray = arr.filter(function(element) {
+			return element != valueToRemove 
+		})
+		return newArray;
+		},
+
+	findIndexesOf: function (arr, itemToFind) {
 		
-	// },
+	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 		

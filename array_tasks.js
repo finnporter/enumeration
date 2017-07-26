@@ -70,9 +70,17 @@ var arrayTasks = {
   		return newArray;
   	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		var newArray = [];
+		for (element of arr) {
+			if (element % 2 == 0) {
+				newArray.push(element * element);
+			}
+		}
+		return newArray.reduce(function(a, b) {
+			return a + b;
+		})
+	}
 
 }
 
